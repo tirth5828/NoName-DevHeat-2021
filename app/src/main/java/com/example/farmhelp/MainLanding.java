@@ -24,10 +24,10 @@ public class MainLanding extends AppCompatActivity {
 
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.brochure, "Brochure", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        models.add(new Model(R.drawable.sticker, "Sticker", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        models.add(new Model(R.drawable.poster, "Poster", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        models.add(new Model(R.drawable.namecard, "NameCard", "Business cards are cards bearing business information about a company or individual."));
+        models.add(new Model(R.drawable.rice, "Rice", "The cultivated rice plant is an annual grass and grows to about 1.2 metres (4 feet) in height. The leaves are long and flattened and are borne on hollow stems."));
+        models.add(new Model(R.drawable.barley, "Barley", "Barley or Jau, scientifically known as Hordeum vulgare L. is one of the most important cereal crops in the world after rice, wheat and maize."));
+        models.add(new Model(R.drawable.wheat, "Wheat", "Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food. The many species of wheat together make up the genus Triticum"));
+        models.add(new Model(R.drawable.maize, "Maize", "Maize (Zea mays L.) is the world's leading crop and is widely cultivated as cereal grain that was domesticated in Central America"));
 
         adapter = new Adapter(models, this);
 
