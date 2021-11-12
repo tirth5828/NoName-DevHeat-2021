@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Farm Help</string>
+    <string name="choose_the_crop">Choose the Crop</string>
+    <string name="order_now">Order Now!</string>
+
+
 </resources>
