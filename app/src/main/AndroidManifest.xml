@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.farmhelp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -15,6 +21,16 @@
         <activity
             android:name=".MainLanding"
             android:exported="false" />
+
+        <activity
+            android:name=".details_form"
+            android:exported="false" />
+
+        <activity
+            android:name=".Weather"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+
         <activity
             android:name=".Splashscreen"
             android:exported="true" >
@@ -26,7 +42,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
 
         </activity>
     </application>
