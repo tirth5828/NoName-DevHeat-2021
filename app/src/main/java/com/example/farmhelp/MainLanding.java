@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.animation.ArgbEvaluator;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,5 +66,10 @@ public class MainLanding extends AppCompatActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
+    }
+
+    public void AddCrop(View view) {
+        Intent intent = new Intent(this, details_form.class);
+        startActivity(intent);
     }
 }

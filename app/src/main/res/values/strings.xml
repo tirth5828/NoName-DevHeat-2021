@@ -2,6 +2,48 @@
     <string name="app_name">Farm Help</string>
     <string name="choose_the_crop">Choose the Crop</string>
     <string name="order_now">Order Now!</string>
+    <string name="soil_type">Soil Type</string>
+    <string name="labour_type">Labour Type</string>
+    <string name="land_area">Land Area</string>
+    <string name="in_mm">in mm</string>
+    <string name="find_suitable_crop">Find Suitable Crop</string>
+    <string name="add_a_crop">Add A Crop</string>
+
+    <string-array name="crop_array">
+        <item>Rice</item>
+        <item>Maize</item>
+        <item>Barley</item>
+        <item>Wheat</item>
+    </string-array>
+
+    <string-array name="soil_type_array">
+        <item>Alluvial soil</item>
+        <item>Black Cotton Soil</item>
+        <item>Red soil</item>
+        <item>Laterite soil</item>
+        <item>Mountainous or Forest Soils</item>
+        <item>Arid or Desert Soil</item>
+        <item>Saline and Alkaline Soil</item>
+        <item>Peaty Soil</item>
+        <item>Marshy Soil</item>
+    </string-array>
+
+
+    <string-array name="labour_capacity_array">
+        <item>None</item>
+        <item>Low (2–5)</item>
+        <item>Medium (5–8)</item>
+        <item>Intense (9 and above)</item>
+    </string-array>
+
+    <string-array name="land_size_array">
+        <item>Small (1–2 hectare)</item>
+        <item>Semi – Medium (2–4 hectare)</item>
+        <item>Medium (4–10 hectare)</item>
+        <item>Large (10 hectare and above)</item>
+    </string-array>
+
+
 
 
 </resources>
