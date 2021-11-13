@@ -42,7 +42,7 @@ import org.json.JSONObject;
 
 public class Weather extends AppCompatActivity  {
 
-    TextView windspeed,tempMin,tempMax,pressure,humidity;
+    TextView windspeed,tempMin,tempMax,pressure,humidity,sky;
     double Lat,Lon;
     FusedLocationProviderClient mFusedLocationClient;
     int REQUEST_LOCATION = 1;
@@ -58,6 +58,7 @@ public class Weather extends AppCompatActivity  {
         tempMax = findViewById(R.id.tempMax);
         pressure = findViewById(R.id.pressure);
         humidity = findViewById(R.id.humidity);
+        sky = findViewById(R.id.sky);
 
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
@@ -79,8 +80,8 @@ public class Weather extends AppCompatActivity  {
                 try {
                     JSONObject array= (JSONObject) response.get("wind");
                     JSONObject array1= (JSONObject) response.get("main");
-
-
+                    JSONArray array2 = response.getJSONArray("weather");
+                    JSONObject array3 = array2.getJSONObject(0);
 
 
                     String s1= array.getString("speed");
@@ -88,6 +89,7 @@ public class Weather extends AppCompatActivity  {
                     String s3= array1.getString("temp_max");
                     String s4= array1.getString("pressure");
                     String s5= array1.getString("humidity");
+                    String s6=array3.getString("description");
 
 
 
@@ -96,6 +98,7 @@ public class Weather extends AppCompatActivity  {
                     tempMax.setText(s3);
                     pressure.setText(s4);
                     humidity.setText(s5);
+                    sky.setText(s6);
 
                     //Toast.makeText(getApplicationContext(),s,Toast.LENGTH_LONG).show();
                 } catch (JSONException e) {
